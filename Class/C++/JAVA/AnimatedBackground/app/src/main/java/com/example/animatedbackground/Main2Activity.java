@@ -34,9 +34,9 @@ public class Main2Activity extends AppCompatActivity {
         //can change button images for types of games
         models = new ArrayList<>();
         models.add(new Model(R.drawable.defaultgame, "Standard Game", "Standard charades where friends guess the celebrity"));
-        models.add(new Model(R.drawable.accentgame, "Sticker", "Sitcker is a type of label:"));
-        models.add(new Model(R.drawable.customgame, "Poster", "Poster is ay piece of printed paper"));
-        models.add(new Model(R.drawable.newgame, "Namecard", "Business cards are cards"));
+        models.add(new Model(R.drawable.accentgame, "Accents", "Try and guess the accent!"));
+        models.add(new Model(R.drawable.customgame, "Custom Game", "Create your own questions"));
+        models.add(new Model(R.drawable.newgame, "Names Game", "Use team members names and act them out in the given situation"));
 
         adapter = new Adapter(models, this);
 

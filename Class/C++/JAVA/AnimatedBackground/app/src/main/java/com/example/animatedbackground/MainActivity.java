@@ -2,9 +2,10 @@ package com.example.animatedbackground;
 
 import android.content.Intent;
 import android.graphics.drawable.AnimationDrawable;
+import android.media.MediaPlayer;
+import android.os.Bundle;
 import android.support.constraint.ConstraintLayout;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
@@ -12,19 +13,22 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import org.w3c.dom.Text;
-
 public class MainActivity extends AppCompatActivity {
 
     Button sub;
     Animation frombottom, fromtop, fadein;
     ImageView logojest;
     TextView textdescription;
+    MediaPlayer themesong;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        themesong=MediaPlayer.create(MainActivity.this,R.raw.themesong);
+        themesong.start();
+
 
         ConstraintLayout constraintLayout = findViewById(R.id.layout);
         AnimationDrawable animationDrawable = (AnimationDrawable) constraintLayout.getBackground();
