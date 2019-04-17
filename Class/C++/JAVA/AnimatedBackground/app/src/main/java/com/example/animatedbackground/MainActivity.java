@@ -13,6 +13,9 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+//This is where all your backend code goes. Basically its like C++ where you have arrays, if statements,etc
+//another feature is that you can use the stuff you designed in xml files. So onclicklisteners can be used to let buttons perform "actions" such as move to pages.
+
 public class MainActivity extends AppCompatActivity {
 
     Button sub;
